@@ -1,5 +1,5 @@
 # NoSQL - Project
-Create a dashboard of the most viewed article in Wikipedia using 150Go on AWS (Scholar project, 2016)
+Create a dashboard of the most viewed articles in Wikipedia using 150Go on AWS
 </br>
 ## User guide
 
