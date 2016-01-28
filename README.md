@@ -1,10 +1,9 @@
 # NoSQL - Project
 Create a dashboard of the most viewed article in Wikipedia using 150Go on AWS (Scholar project, 2016)
-
+</br>
 ## User guide
 
 ### AWS cluster initialization
-<br/>
 #### 1. Configure 6 instances (m3.xlarge) 
 http://docs.datastax.com/en/datastax_enterprise/4.8/datastax_enterprise/install/installAMI.html
 
