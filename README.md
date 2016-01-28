@@ -41,3 +41,11 @@ $ scp -i <path/to/file> ubuntu@<ip>:~/<path/to/file>
 ```
 $ dse spark-submit --conf spark.executor.memory=7g /home/ubuntu/dataToCassandra.py
 ```
+<br>
+### Packages installation
+```
+sudo apt-get install python-setuptools python-dev build-essential python-pip  
+sudo pip install --upgrade setuptools 
+sudo pip install pandas
+sudo apt-get install git
+```
