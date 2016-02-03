@@ -1,0 +1,13 @@
+/* CREATE KEYSPACE */
+CREATE KEYSPACE IF NOT EXISTS noSQL_Exams WITH replication = {'class': 'SimpleStrategy','replication_factor' : 2};
+
+
+/* CREATE TABLES */
+CREATE TABLE IF NOT EXISTS noSQL_Exams.top100_by_day (timestamp int, pagename text, views int, project text, PRIMARY KEY((timestamp), views, pagename)) WITH CLUSTERING ORDER BY (views DESC, pagename ASC);
+
+CREATE TABLE IF NOT EXISTS noSQL_Exams.top10_in_30days (timestamp int, pagename text, views int, project text, PRIMARY KEY((timestamp), views, pagename)) WITH CLUSTERING ORDER BY (views DESC, pagename ASC);
+
+CREATE TABLE IF NOT EXISTS noSQL_Exams.viewsPage_day (timestamp int, pagename text, views int, project text, PRIMARY KEY((pagename), timestamp) );
+
+CREATE TABLE IF NOT EXISTS noSQL_Exams.viewsPage_hour (timestamp int, pagename text, views int, project text, hour int, PRIMARY KEY((pagename, timestamp), hour));
+
